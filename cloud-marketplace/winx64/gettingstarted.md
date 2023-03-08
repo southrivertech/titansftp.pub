@@ -8,7 +8,7 @@ This Titan FTP Server Virtual Machine (VM) contains a pre-built and pre-configur
 
 ## Tech Support
 
-Titan FTP Server Help Deskt: [https://helpdesk.titanftp.com](https://helpdesk.titanftp.com)
+Titan FTP Server Help Desk: [https://helpdesk.titanftp.com](https://helpdesk.titanftp.com)
 
 ## WebSite(s)
 
