@@ -6,7 +6,7 @@ For the latest up-to-date information, please refer to our GitHub repo located a
 
 https://github.com/southrivertech/titanftp.pub/tree/main/cloud-marketplace
 
-Thank you!
+
 
 
 
