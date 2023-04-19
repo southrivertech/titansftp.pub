@@ -1,4 +1,4 @@
-# SRT Cloud Marketplace Repository
+# <img src="https://southrivertech.com/software/nextgen/titanftp/titanftp48.png" alt="Titan FTP Server logo"> Titan FTP Server - Cloud Marketplace Repository</img>
 
 This repository contains various documents and utilities for users of our cloud offerings. 
 
