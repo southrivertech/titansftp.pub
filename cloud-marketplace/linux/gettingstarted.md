@@ -1,41 +1,33 @@
-# <img src="https://southrivertech.com/software/nextgen/cornerstone/cornerstone48.png" alt="Cornerstone Server logo"> Cornerstone Server - Linux Cloud Edition
+# <img src="https://southrivertech.com/software/nextgen/titanftp/titanftp48.png" alt="Titan SFTP Server logo"> 
 
-Thank you for choosing Cornerstone Server - Cloud Edition from South River Technologies. This is the Pay-as-you-go version of our solution, meaning that it will run fully featured without the need to purchase a license from South River Technologies. Simply fire up your Cornerstone Server VM, and run your business.
+Titan SFTP Server - Linux Edition
+
+Thank you for choosing Titan SFTP Server - Linux Edition from South River Technologies. This is the Pay-as-you-go version of our solution, meaning that it will run fully featured without the need to purchase a license from South River Technologies. Simply fire up your Titan SFTP Server VM, and run your business.
 
 ## What's on the VM?
 
-This Titan FTP Server Virtual Machine (VM) contains a pre-built and pre-configured installation of the product. 
+This Titan Virtual Machine (VM) contains a pre-built and pre-configured installation of the product. 
 
-## Features of Titan FTP Server
+## Features of Titan SFTP Server
 
-Cornerstone is a reverse proxy server that provides perimeter security for your Cornerstone implementation. Enabling you to close ports on your firewall, Cornerstone dynamically opens outbound ports to communicate with Cornerstone. User requests are sent by the Cornerstone server to Cornerstone as a response on the dynamically opened channel. Working exclusively as a passthrough, no data is ever stored on or outside your firewall.
+Titan is a fully featured secure file transfer server supporting a wide variety of file transfer protocols. SFTP (Secure File Transfer over SSH), FTP/S (Traditional FTP over a secure TLS Connection), and HTTP/S (Secure HTTP over TLS).
 
 ## Getting Started
 
-To launch the Cornerstone Administrator UI point your browser to your VM's public url or IP address. The first time you run the Administrator it will prompt you to create a new Administrator account to allow configuring the Cornerstone server. 
+To launch the Titan Administrator UI, point your browser to your VM's public url or IP address, port 41443. The Admin Console listens on port 41443. The first time you run the Administrator it will prompt you to create a new Administrator account to allow configuring the Titan Server. 
 
-## Configure Cornerstone for External access
+## Configure Titan for External access
 
-The Cornerstone Server instance has been preconfigured for access from an external Cornerstone server via port 45100. The public ports that Cornerstone will proxy to the Cornerstone Server will configured on your Cornerstone server but you will need to make sure the cloud provider firewall will allow those external ports through. For example, the Cornerstone server may wish for the Cornerstone server to publicly listen on port 2200 for SFTP connections. In this case you will need to configure the cloud provider to allow inbound connections on port 2200 as well as the cloud provider firewall settings.
-
-- `Port Setup` - Cornerstone services are running behind both a Windows Firewall and the main Azure/AWS firewall. Your cloud provider will issue a public IP address, or DNS name, for your VM. In order for Cornerstone services to function properly, Cornerstone must be configured with the External IP address of the router/firewall.
-
-- `Private IP Address` - set this to the desired listening IP address where Cornerstone will connect to the Cornerstone server.
-
-- `Public IP Address` - set this to the desired public IP address issued by your cloud provider for external connections to be proxied to the Cornerstone server.
-- 
-
+The Titan VM comes pre-configured with a Default Server instance. SFTP Services are enabled and listening on port 2200. Port 22 is reserved for the SSH console. The Default Server instance also has a test user with test/test as the user credentials. NOTE: CHANGE THIS PASSWORD IMMEDIATELY. For testing, somply point your favorite SFTP client to sftp://public-ip-of-vm:2200 and log in with the test user. Host key suppor is also available and enabled. Refer to the Help system in the Admin Console for more information.
 
 
 ## Tech Support
 
-Complimentary technical support is available on our website at https://www.srthelpdesk.com
-
-## More Information
+Complimentary technical support is available on our website at https://helpdesk.titanftp.com
 
 ## WebSite(s)
 
-Cornerstone Server micro site: [https://www.cornerstonemft.com](https://www.cornerstonemft.com)
+Titan SFTP Server micro site: [https://www.titanftp.com](https://www.titanftp.com)
 
 South River Technologies corporate WebSite:  [https://www.SouthRiverTechnologies.com](https://www.SouthRiverTechnologies.com)
 
