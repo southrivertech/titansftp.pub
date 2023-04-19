@@ -23,4 +23,5 @@ users account.
 
 The Enterprise Edition of Titan been preconfigured with all features enabled (except for non-secure FTP). SFTP services are running
 on port 2200, FTP/S services on port 990 with Passive mode ports 50000-50075, and a secure WebUI is available on port 443. As with
-all editions of Titan, it has been hardened with all weak security protocols disabled.
+all editions of Titan, it has been hardened with all weak security protocols disabled.<br />
+[https://github.com/southrivertech/titanftp.pub/tree/main/cloud-marketplace/linux/tnsftp](Linux 64-bit) [https://github.com/southrivertech/titanftp.pub/tree/main/cloud-marketplace/win/tnsftp](Windows 64-bit)
