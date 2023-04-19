@@ -23,19 +23,3 @@ users account.
 The Enterprise Edition of Titan been preconfigured with all features enabled (except for non-secure FTP). SFTP services are running
 on port 2200, FTP/S services on port 990 with Passive mode ports 50000-50075, and a secure WebUI is available on port 443. As with
 all editions of Titan, it has been hardened with all weak security protocols disabled.
-
-## Cornerstone MFT Server - Enterprise Edition (csent)
-
-The Enterprise Edition of Cornerstone been preconfigured with all features enabled (except for non-secure FTP). SFTP services are running
-on port 2200, FTP/S services on port 990 with Passive mode ports 50000-50075, a secure WebUI is available on port 443 with EFSS (Enterprise File Sharing)
-and collaboration is supported through WebDAV/S on port 8443. As with all editions of our products, the server has been
-hardened with all weak security protocols disabled.
-
-## DMZedge Server - Enterprise Edition (dmzent)
-DMZedge Server is our secure reverse proxy server for use with Cornerstone MFT Server. Install DMZedge Server outside of the corporate
-VLAN and then configure an internal Cornerstone MFT Server to interface to the DMZedge Server. DMZedge will then listen
-for remote connections from clients and securely proxy those connections through a zero-port firewall to the Cornerstone
-Server for processing. DMZedge works with FTP/S, SFTP, HTTP/S and WebDAV/S connections.  As with all editions of our 
-products, the server has been hardened with all weak security protocols disabled.
-
-
