@@ -1,9 +1,10 @@
 # <img src="https://southrivertech.com/software/nextgen/titanftp/titanftp48.png" alt="Titan FTP Server logo"> Titan FTP Server - Cloud Marketplace Repository</img>
 
-This repository contains various documents and utilities for users of our cloud offerings. 
+This repository contains various documents and utilities for users of our Titan SFTP Server cloud marketplace offerings. 
 
-We currently offer our product line on the Amazon AWS Marketplace, Microsoft Azure Marketplace, and Google Cloud Marketplace. On
-each Cloud Marketplace, there will be Windows and Linux versions of the products.
+Titan SFTP Server is currently available the Amazon AWS Marketplace, Microsoft Azure Marketplace, and Google Cloud Marketplace. On
+each Cloud Marketplace, there will be Windows and Linux versions of the products and various editions which have been pre-configured
+and tuned for various uses.
 
 ## Titan FTP Server - CUCM Edition (tncucm)
 
