@@ -1,6 +1,6 @@
-# Titan FTP Server for Linux
+# Titan SFTP Server for Linux
 
-Thank you for choosing Titan FTP Server.
+Thank you for choosing Titan SFTP Server.
 
 For the latest up-to-date information, please refer to our GitHub repo located at 
 

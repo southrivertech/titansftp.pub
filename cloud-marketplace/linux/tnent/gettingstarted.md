@@ -1,12 +1,12 @@
-# Titan FTP Enterprise Server - Linux Cloud Edition
+# Titan SFTP Enterprise Server - Linux Cloud Edition
 
-Thank you for choosing Titan FTP Enterprise Server - Cloud Edition from South River Technologies. This is the Pay-as-you-go version of our solution, meaning that it will run fully featured without the need to purchase a license from South River Technologies. Simply fire up your Titan Server VM, and run your business.
+Thank you for choosing Titan SFTP Enterprise Server - Cloud Edition from South River Technologies. This is the Pay-as-you-go version of our solution, meaning that it will run fully featured without the need to purchase a license from South River Technologies. Simply fire up your Titan Server VM, and run your business.
 
 ## What's on the VM?
 
-This Titan FTP Server Virtual Machine (VM) contains a pre-built and pre-configured installation of the product. All bells and whistles are available for you to utilize and a sample server instance called Default Server has already been configured with FTP/S, SFTP and HTTP/S services enabled. There is also a test user for logging in to the system. NOTE: It is strongly recommended that you change the credentials of the test user immediately.
+This Titan SFTP Server Virtual Machine (VM) contains a pre-built and pre-configured installation of the product. All bells and whistles are available for you to utilize and a sample server instance called Default Server has already been configured with FTP/S, SFTP and HTTP/S services enabled. There is also a test user for logging in to the system. NOTE: It is strongly recommended that you change the credentials of the test user immediately.
 
-## Features Titan FTP Server
+## Features Titan SFTP Server
 
 Some of the features of Titan which are available include:
 
@@ -21,7 +21,7 @@ Some of the features of Titan which are available include:
 
 ## Getting Started
 
-To launch the Titan FTP Administrator UI point your browser to your VM's public url or IP address and use port 41443, e.g. https://yourdomain.com:41443 The WebUI is using a non-CA validated test certificate. While you will be able to connect on port 41443, you will get warning about the invalid certificate. This it completely normal and will go away when you replace your test certificate with a valid certificate from a CA
+To launch the Titan SFTP Administrator UI point your browser to your VM's public url or IP address and use port 41443, e.g. https://yourdomain.com:41443 The WebUI is using a non-CA validated test certificate. While you will be able to connect on port 41443, you will get warning about the invalid certificate. This it completely normal and will go away when you replace your test certificate with a valid certificate from a CA
 
 The first time you run the Administrator it will prompt you to create a new Administrator account to allow configuring the server.
 
