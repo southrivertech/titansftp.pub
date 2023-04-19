@@ -1,7 +1,7 @@
 # Amazon AWS Repository
 
-Here is where you will find files specific to our Amazon AWS listings. The following product are available on the 
-Amazon AWS Marketplace and each product is available for Windows and Linux
+Here is where you will find files specific to our Cloud listings. The following products are available on the 
+Commercial Marketplace and each product is available for Windows and Linux
 
 ## Titan FTP Server - CUCM Edition (tncucm)
 
