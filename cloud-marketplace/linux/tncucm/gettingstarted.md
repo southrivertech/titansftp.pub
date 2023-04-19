@@ -59,10 +59,17 @@ Number of backups – You can set this to 2 and run your backups a few times. On
 - The test server has a test host key. Don't use these once you open up the server to public access as they are not meant for general use.
 - The Firewall has been pre-configured to allow inbound traffic on port 2200 and 41443. This will allow external programs the ability to connect to the Titan server's Default Server instance on port 2200 and Web interface.
 - SFTP services are running on port 2200. While this is not an industry standard port for SFTP, our 20+ years of experience has taught us that opening port 22 to the internet immediately invites hundreds of hackers to hammer your server trying to break in. Using a non-standard port will not only thwart hackers but also limit unnecessary traffic and bandwidth usage on your VM. We recommend moving your SFTP server to some non-standard port, such as port 2200. When you change your port in the Titan Admin console on the SFTP tab, you will also need to update the SFTP port on the Windows Firewall and also in the Azure/AWS console. This will ensure that public IP traffic will be successfully routed through the Azure/AWS firewall over to your VM and your local VM's Windows Firewall will pass that same port traffic directly to your Titan Server.
-- If you encounter any issues, feel free to check out our help desk at http://www.SrtHelpDesk.com/ where we have many solutions guides. If you need help, please submit a ticket and use TitanPAYG as your registration code if requested.
 
-https://www.titanftp.com (Titan SFTP Server Website)
-https://www.SouthRiverTech.com (Corporate Website)
-https://www.WebDrive.com (Virtual Drive Mapping Client)
-https://www.CornerstoneMFT.com (Enterprise grade Managed File Transfer Solution)
+## Tech Support
+
+Complimentary technical support is available on our website at https://helpdesk.titanftp.com (use TitanPAYG as your registration code)
+
+## WebSite(s)
+
+South River Technologies corporate WebSite:  [https://www.SouthRiverTechnologies.com](https://www.SouthRiverTechnologies.com)
+Cornerstone MFT (Enterprise grade Managed File Transfer Solution): [https://www.CornerstoneMFT.com](https://www.cornerstonemft.com)
+DMZedge Server (Secure reverse proxy server for Cornerstone MFT): [https://www.dmzedge.com](https://www.dmzedge.com)
+Titan SFTP Server micro site: [https://www.titanftp.com](https://www.titanftp.com)
+WebDrive (Virtual Drive Mapping Client): [https://www.WebDrive.com](https://www.webdrive.com)
+
 
