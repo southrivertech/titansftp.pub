@@ -49,9 +49,17 @@ At this point, the general configurations are complete and the test user should 
 - /datadisk is a 512GB data disk configured to store your Titan user data. If you need to add more storage to your server, see the
   Azure/AWS portal documentation for more information about adding new volumes/drives.
 - /logdisk is a 74GB disk configured to store server logs
-- If you encounter any issues, feel free to check out our help desk at http://www.SrtHelpDesk.com/ where we have many solutions guides. If you need help, please submit a ticket and use TitanPAYG as your registration code if requested.
 
-https://www.titanftp.com (Titan FTP Server Website)
-https://www.SouthRiverTech.com (Corporate Website)
-https://www.WebDrive.com (Virtual Drive Mapping Client)
-https://www.CornerstoneMFT.com (Enterprise grade Managed File Transfer Solution)
+## Tech Support
+
+Complimentary technical support is available on our website at https://helpdesk.titanftp.com (use TitanPAYG as your registration code)
+
+## WebSite(s)
+
+South River Technologies corporate WebSite:  [https://www.SouthRiverTechnologies.com](https://www.SouthRiverTechnologies.com)
+Cornerstone MFT (Enterprise grade Managed File Transfer Solution): [https://www.CornerstoneMFT.com](https://www.cornerstonemft.com)
+DMZedge Server (Secure reverse proxy server for Cornerstone MFT): [https://www.dmzedge.com](https://www.dmzedge.com)
+Titan SFTP Server micro site: [https://www.titanftp.com](https://www.titanftp.com)
+WebDrive (Virtual Drive Mapping Client): [https://www.WebDrive.com](https://www.webdrive.com)
+
+
