@@ -10,6 +10,10 @@ and tuned for various uses.
 
 The CUCM Edition of Titan has been preconfigured and optimized for use as a secure backup server for CISCO CUCM devices. The CUCM
 Edition is listening on port 2200 for UCM backup software and has been hardened and optimized for security and effeciency.
+| [Linux 64-bit](https://github.com/southrivertech/titanftp.pub/tree/main/cloud-marketplace/linux/tncucm) | [Windows 64-bit](https://github.com/southrivertech/titanftp.pub/tree/main/cloud-marketplace/win/tncucm) |
+| -------- | ------- |
+
+
 
 ## Titan SFTP Server - SFTP Edition (tnsftp)
 
@@ -18,10 +22,17 @@ disabled to ensure the levels of performance, I/O and security. The SFTP server 
 version set to Version 4. Weak ciphers have been disabled and public host key support is enabled. A test user account is created
 for testing password authentication. For Public key authentication, log in to the Admin console and upload an SSH public key to the
 users account.
+| [Linux 64-bit](https://github.com/southrivertech/titanftp.pub/tree/main/cloud-marketplace/linux/tnsftp) | [Windows 64-bit](https://github.com/southrivertech/titanftp.pub/tree/main/cloud-marketplace/win/tnsftp) |
+| -------- | ------- |
+
+
 
 ## Titan SFTP Server - Enterprise Edition (tnent)
 
 The Enterprise Edition of Titan been preconfigured with all features enabled (except for non-secure FTP). SFTP services are running
 on port 2200, FTP/S services on port 990 with Passive mode ports 50000-50075, and a secure WebUI is available on port 443. As with
 all editions of Titan, it has been hardened with all weak security protocols disabled.<br />
-[https://github.com/southrivertech/titanftp.pub/tree/main/cloud-marketplace/linux/tnsftp](Linux 64-bit) [https://github.com/southrivertech/titanftp.pub/tree/main/cloud-marketplace/win/tnsftp](Windows 64-bit)
+| [Linux 64-bit](https://github.com/southrivertech/titanftp.pub/tree/main/cloud-marketplace/linux/tnent) | [Windows 64-bit](https://github.com/southrivertech/titanftp.pub/tree/main/cloud-marketplace/win/tnent) |
+| -------- | ------- |
+
+
