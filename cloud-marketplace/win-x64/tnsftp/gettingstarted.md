@@ -1,4 +1,4 @@
-# Titan SFTP Server - Linux Cloud Edition
+# Titan SFTP Server - SFTP Cloud Edition for Windows
 
 Thank you for choosing Titan SFTP Enterprise Server - Cloud Edition from South River Technologies. This is the Pay-as-you-go version of our solution, meaning that it will run fully featured without the need to purchase a license from South River Technologies. Simply fire up your Titan Server VM, and run your business.
 
@@ -27,7 +27,7 @@ The first time you run the Administrator it will prompt you to create a new Admi
 
 ## Configure Titan for External access
 
-The Test Server instance has been preconfigured for local access. You can access the server using the Localhost, internal IP address, or windows PC name. SFTP services are available on port 2200. Once you have performed initial testing using the internal access points and the default 'test' username, you are ready to configure the system for access from the outside.
+The Test Server instance has been preconfigured for local access. You can access the server using the Localhost, internal IP address, or Windows PC name. SFTP services are available on port 2200. Once you have performed initial testing using the internal access points and the default 'test' username, you are ready to configure the system for access from the outside.
 
 1. Expand the Titan SFTP Domains node in the tree, and then expand the Default Server Server Instance.
 2. Select the Users node from the tree, click the “+” icon on the right hand side to create a new user. Follow the New User Wizard to add a new user to the system.
