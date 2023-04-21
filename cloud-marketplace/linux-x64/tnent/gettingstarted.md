@@ -1,4 +1,4 @@
-# Titan SFTP Server - Enterprise Edition for Linux
+# Titan SFTP Server - Enterprise Cloud Edition for Linux
 
 Thank you for choosing Titan SFTP Enterprise Server - Cloud Edition from South River Technologies. This is the Pay-as-you-go version of our solution, meaning that it will run fully featured without the need to purchase a license from South River Technologies. Simply fire up your Titan Server VM, and run your business.
 
