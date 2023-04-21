@@ -1,4 +1,4 @@
-# Titan SFTP Server for Linux
+# Titan SFTP Server
 
 Thank you for choosing Titan SFTP Server.
 
