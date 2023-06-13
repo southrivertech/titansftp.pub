@@ -20,9 +20,13 @@ Some of the features of Titan which are available include:
 
 ## Getting Started
 
-To launch the Titan SFTP Administrator UI point your browser to your VM's public url or IP address and use port 41443, e.g. https://yourdomain.com:41443 The WebUI is using a non-CA validated test certificate. While you will be able to connect on port 41443, you will get warning about the invalid certificate. This it completely normal and will go away when you replace your test certificate with a valid certificate from a CA
+Once you have securely connected to the instance over SSH, the initial Titan administrator account needs to be configured. To configure the Titan administrator account, use the following command and supply your new administrator credentials. It's imporant to use a complex password.
 
-The first time you run the Administrator it will prompt you to create a new Administrator account to allow configuring the server.
+sudo /opt/southriver/srxserver/srxserver /LASINIT /username=`<admin-username>` /password=`<admin-password>`
+
+Once the Titan administrative credentials have been established, you can now connect to the Titan web-based admin console through your web-browser by pointing it to https://`<ipaddress>`:41443.
+
+Note that this is a secure connection. However, since Titan is using a temporary certificate, you will see a security warning in the browser. Proceed past the security warning and log in to the Titan Admin console. At this point you will be able to configure the Titan application including adding your own TLS certificate.
 
 ## Configure Titan for External access
 
