@@ -1,4 +1,4 @@
-# <img src="https://southrivertech.com/software/nextgen/titanftp/titanftp48.png" alt="Titan SFTP Server logo"> Titan SFTP Server - Cloud Marketplace Repository</img>
+# <img src="https://srtcdnstorage.blob.core.windows.net/software/nextgen/titansftp/titansftp48.png" alt="Titan SFTP Server logo"> Titan SFTP Server - Cloud Marketplace Repository</img>
 
 This repository contains various documents and utilities for users of our Titan SFTP Server cloud marketplace offerings. 
 

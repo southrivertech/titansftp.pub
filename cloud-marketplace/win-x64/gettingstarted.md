@@ -8,7 +8,7 @@ This Titan SFTP Server Virtual Machine (VM) contains a pre-built and pre-configu
 
 ## Tech Support
 
-Titan SFTP Server Help Desk: [https://helpdesk.titanftp.com](https://helpdesk.titanftp.com)
+Titan SFTP Server Help Desk: [https://helpdesk.southrivertech.com](https://helpdesk.southrivertech.com)
 
 ## WebSite(s)
 

@@ -56,8 +56,8 @@ Complimentary technical support is available on our website at https://helpdesk.
 
 ## WebSite(s)
 
-South River Technologies corporate WebSite:  [https://www.SouthRiverTechnologies.com](https://www.SouthRiverTechnologies.com)<br />
-Cornerstone MFT (Enterprise grade Managed File Transfer Solution): [https://www.CornerstoneMFT.com](https://www.cornerstonemft.com)<br />
-DMZedge Server (Secure reverse proxy server for Cornerstone MFT): [https://www.dmzedge.com](https://www.dmzedge.com)<br />
-Titan SFTP Server micro site: [https://www.titanftp.com](https://www.titanftp.com)<br />
+South River Technologies corporate WebSite:  [https://www.southrivertech.com](https://www.southrivertech.com)<br />
+Titan MFT (Enterprise grade Managed File Transfer Solution): [https://www.TitanMFT.com](https://www.TitanMFT.com)<br />
+Titan DMZ Server (Secure reverse proxy server for Titan MFT): [https://www.TitanDMZ.com](https://www.TitanDMZ.com)<br />
+Titan SFTP Server micro site: [https://www.TitanFTP.com](https://www.TitanFTP.com)<br />
 WebDrive (Virtual Drive Mapping Client): [https://www.WebDrive.com](https://www.webdrive.com)<br />
