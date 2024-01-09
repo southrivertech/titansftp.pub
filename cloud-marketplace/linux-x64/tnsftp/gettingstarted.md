@@ -6,6 +6,18 @@ Thank you for choosing Titan SFTP Enterprise Server - Cloud Edition from South R
 
 This Titan SFTP Server Virtual Machine (VM) contains a pre-built and pre-configured installation of the product. All bells and whistles are available for you to utilize and a sample server instance called Default Server has already been configured with SFTP services enabled. There is also a test user for logging in to the system. NOTE: It is strongly recommended that you change the credentials of the test user immediately.
 
+## Getting Started
+
+Once you have securely connected to the instance over SSH, the initial Titan administrator account needs to be configured. To configure the Titan administrator account, use the following command and supply your new administrator credentials. It's imporant to use a complex password consisting of a minimum of 8 characters in length, both upper and lower case, one or more numbers, and one or more special characters consisting of the following characters "(~!@#$%^&*_-+=`|\\(){}[]:;\"'<>,.?/)"
+
+```
+sudo /opt/southriver/srxserver/srxserver /LASINIT /username=`<admin-username>` /password=`<admin-password>`
+```
+
+Once the Titan administrative credentials have been established, you can now connect to the Titan web-based admin console through your web-browser by pointing it to https://`<ipaddress>`:41443.
+
+Note that this is a secure connection. However, since Titan is using a temporary certificate, you will see a security warning in the browser. Proceed past the security warning and log in to the Titan Admin console. At this point you will be able to configure the Titan application including adding your own TLS certificate.
+
 ## Features Titan SFTP Server
 
 Some of the features of Titan which are available include:
@@ -19,16 +31,6 @@ Some of the features of Titan which are available include:
 - `Public Host Key Authentication`- SSH's highly secure Public Key authentication has been enabled on this server. To use Public Host Key authentication, upload your SFTP client Public Key (.pub) file to the Titan Server and use the Host Key Management utility to Import the client Public Key into the Titan Server Admin console. Once the client's public key has been imported into the Admin console, simply locate the user's account information under the Users node and on their SFTP tab, assign the key to their account. If you have trouble with this feature, contact our help desk and we’ll be glad to help you get started
 - `Email Notifications`- Titan has a full Events Management system which can be leveraged to do many things, including send email notifications for alerts. To fully leverage the power of Email Notifications, please make sure to configure the settings for your specific email server under the Titan Admin console's Email tab.
 
-## Getting Started
-
-
-Once you have securely connected to the instance over SSH, the initial Titan administrator account needs to be configured. To configure the Titan administrator account, use the following command and supply your new administrator credentials. It's imporant to use a complex password.
-
-sudo /opt/southriver/srxserver/srxserver /LASINIT /username=`<admin-username>` /password=`<admin-password>`
-
-Once the Titan administrative credentials have been established, you can now connect to the Titan web-based admin console through your web-browser by pointing it to https://`<ipaddress>`:41443.
-
-Note that this is a secure connection. However, since Titan is using a temporary certificate, you will see a security warning in the browser. Proceed past the security warning and log in to the Titan Admin console. At this point you will be able to configure the Titan application including adding your own TLS certificate.
 
 ## Configure Titan for External access
 
@@ -51,9 +53,6 @@ At this point, the general configurations are complete and the test user should 
 - The test server has a test host key. Don't use these once you open up the server to public access as they are not meant for general use.
 - The Firewall has been pre-configured to allow inbound traffic on port 2200, 990, 443, and FTP Passive range 50000-50100. This will allow external programs the ability to connect to the Titan server's Default Server instance on port 2200 and via FTP and Web interface.
 - SFTP services are running on port 2200. While this is not an industry standard port for SFTP, our 20+ years of experience has taught us that opening port 22 to the internet immediately invites hundreds of hackers to hammer your server trying to break in. Using a non-standard port will not only thwart hackers but also limit unnecessary traffic and bandwidth usage on your VM. We recommend moving your SFTP server to some non-standard port, such as port 2200. When you change your port in the Titan Admin console on the SFTP tab, you will also need to update the SFTP port on the Windows Firewall and also in the Azure/AWS console. This will ensure that public IP traffic will be successfully routed through the Azure/AWS firewall over to your VM and your local VM's Windows Firewall will pass that same port traffic directly to your Titan Server.
-- /datadisk is a 512GB data disk configured to store your Titan user data. If you need to add more storage to your server, see the
-  Azure/AWS portal documentation for more information about adding new volumes/drives.
-- /logdisk is a 74GB disk configured to store server logs
 
 ## Tech Support
 
