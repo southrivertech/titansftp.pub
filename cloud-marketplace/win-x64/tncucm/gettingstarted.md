@@ -1,4 +1,4 @@
-# Titan SFTP Server - CUCM Backup Cloud Edition for Windows
+# <img src="https://srtcdnstorage.blob.core.windows.net/software/nextgen/titansftp/titansftp48.png" alt="Titan SFTP Server logo"> Titan SFTP Server - CUCM Backup Cloud Edition for Windows</img>
 
 Thank you for choosing Titan SFTP Server - CUCM Edition from South River Technologies. This is the Pay-as-you-go version of our solution, meaning that it will run fully featured without the need to purchase a license from South River Technologies. Simply fire up your Titan SFTP Server VM, configure your Cisco® backup systems to point out to your Titan SFTP Server, and run your business using a Cisco recommended and Cisco Certified Backup Server
 
