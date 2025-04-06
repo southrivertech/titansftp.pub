@@ -6,6 +6,10 @@ Thank you for choosing Titan SFTP Server - CUCM Edition from South River Technol
 
 This Titan SFTP Server Virtual Machine (VM) contains a pre-built and pre-configured installation of the product. All bells and whistles are available for you to utilize and a sample server instance called Default Server has already been configured with SFTP services enabled. There is also a test user for logging in to the system however the user account is disabled by default so you will need to edit the user and enable the account before you can login. NOTE: It is strongly recommended that you change the credentials of the test user immediately.
 
+## Getting Started
+
+To launch the Titan SFTP Administrator click on the Titan SFTP Server desktop icon which will launch the browser and connect to the default localhost admin port of 31443. The first time you run the Administrator it will prompt you to create a new Administrator account to allow configuring the server.
+
 ## Features Titan SFTP Server
 
 Some of the features of Titan which are available include:
@@ -18,9 +22,6 @@ Some of the features of Titan which are available include:
 - `Email Notifications`- Titan has a full Events Management system which can be leveraged to do many things, including send email notifications for alerts. To fully leverage the power of Email Notifications, please make sure to configure the settings for your specific email server under the Titan Admin console's Email tab.
 - Many more features are available, see the Titan Admin Users Guide from the Help menu in the Admin Console.
 
-## Getting Started
-
-To launch the Titan SFTP Administrator click on the Titan SFTP Server desktop icon which will launch the browser and connect to the default localhost admin port of 31443. The first time you run the Administrator it will prompt you to create a new Administrator account to allow configuring the server.
 
 ## Configure Titan for External access
 
