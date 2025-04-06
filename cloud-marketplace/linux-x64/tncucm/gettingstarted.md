@@ -33,19 +33,6 @@ Some of the features of Titan which are available include:
 - Many more features are available, see the Titan Admin Users Guide from the Help menu in the Admin Console.
 
 
-## Configure Titan for External access
-
-The Test Server instance has been preconfigured for local access. You can access the server using the Localhost, or the VN's IP address. SFTP services are available on port 2200. Once you have performed initial testing using the internal access points and the default 'test' username, you are ready to configure the system for access from the outside.
-
-1. Expand the Titan SFTP Domains node in the tree, and then expand the Default Server Server Instance.
-2. Select the Users node from the tree, click the “+” icon on the right hand side to create a new user. Follow the New User Wizard to add a new user to the system.
-
-   > NOTE: once you create a new user, it is recommended that the test user account is disabled and/or deleted for security purposes.
-   >
-3. Select the Services node located in the tree just below the Default Server node. Along the right side of the screen will be the list of services. Select "SSH/SFTP". Using the Host Key Management utility, create a new distinct host key for your new server. While Titan comes pre-configured with a stock host key, this key is for testing only and should never be used in a production environment. Once you have the new key created, delete the test key.
-
-At this point, the general configurations are complete and the test user should be able to login using any industry standard SFTP client.  Please see the Titan help file for any specific settings/configuration requirements as well as how to use the new server creation wizard to generate a new, customer specific server instance.
-
 ## Configuring Cisco CUCM Backup Services
 
 Once you have your Titan SFTP Server – CUCM Edition up and running with a new Server Host Key and a new Titan Username, you are ready to configure your CUCM Backup Service to back your Cisco devices up to the Titan server. 
