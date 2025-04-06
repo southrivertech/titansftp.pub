@@ -20,9 +20,7 @@ Some of the features of Titan which are available include:
 
 ## Getting Started
 
-To launch the Titan SFTP Administrator UI point your browser to your VM's public url or IP address and use port 41443, e.g. https://yourdomain.com:41443 The WebUI is using a non-CA validated test certificate. While you will be able to connect on port 41443, you will get warning about the invalid certificate. This it completely normal and will go away when you replace your test certificate with a valid certificate from a CA
-
-The first time you run the Administrator it will prompt you to create a new Administrator account to allow configuring the server.
+To launch the Titan SFTP Administrator click on the Titan SFTP Server desktop icon which will launch the browser and connect to the default localhost admin port of 31443. The first time you run the Administrator it will prompt you to create a new Administrator account to allow configuring the server.
 
 ## Configure Titan for External access
 
