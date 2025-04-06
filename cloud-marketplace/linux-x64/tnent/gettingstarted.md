@@ -30,6 +30,19 @@ Some of the features of Titan which are available include:
 - `Public Host Key Authentication`- SSH's highly secure Public Key authentication has been enabled on this server. To use Public Host Key authentication, upload your SFTP client Public Key (.pub) file to the Titan Server and use the Host Key Management utility to Import the client Public Key into the Titan Server Admin console. Once the client's public key has been imported into the Admin console, simply locate the user's account information under the Users node and on their SFTP tab, assign the key to their account. If you have trouble with this feature, contact our help desk and we’ll be glad to help you get started
 - `Email Notifications`- Titan has a full Events Management system which can be leveraged to do many things, including send email notifications for alerts. To fully leverage the power of Email Notifications, please make sure to configure the settings for your specific email server under the Titan Admin console's Email tab.
 
+## Configure Titan for External access
+
+The Test Server instance has been preconfigured for local access. You can access the server using the Localhost, or the VN's IP address. SFTP services are available on port 2200. Once you have performed initial testing using the internal access points and the default 'test' username, you are ready to configure the system for access from the outside.
+
+1. Expand the Titan SFTP Domains node in the tree, and then expand the Default Server Server Instance.
+2. Select the Users node from the tree, click the “+” icon on the right hand side to create a new user. Follow the New User Wizard to add a new user to the system.
+
+   > NOTE: once you create a new user, it is recommended that the test user account is disabled and/or deleted for security purposes.
+   >
+3. Select the Services node located in the tree just below the Default Server node. Along the right side of the screen will be the list of services. Select "SSH/SFTP". Using the Host Key Management utility, create a new distinct host key for your new server. While Titan comes pre-configured with a stock host key, this key is for testing only and should never be used in a production environment. Once you have the new key created, delete the test key.
+
+At this point, the general configurations are complete and the test user should be able to login using any industry standard SFTP client.  Please see the Titan help file for any specific settings/configuration requirements as well as how to use the new server creation wizard to generate a new, customer specific server instance.
+
 ## Notes
 
 - `HTTP/S and FTP/S Services` – The server has been tested against both the DigiCert.com and SslLabs.com TLS security vulnerability scanner and passed. This Windows Server image has been hardened with 3DES, SHA1, TLS 1.0 and other weak ciphers being disabled.
