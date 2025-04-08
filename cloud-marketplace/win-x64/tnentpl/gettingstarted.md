@@ -1,19 +1,20 @@
-# <img src="https://srtcdnstorage.blob.core.windows.net/software/nextgen/titansftp/titansftp48.png" alt="Titan logo"> Titan SFTP Server - Enterprise Cloud Edition for Windows</img>
+# <img src="https://srtcdnstorage.blob.core.windows.net/software/nextgen/titansftp/titansftp48.png" alt="Titan logo"> Titan SFTP Server-HA - Cloud Edition for Windows</img>
 
-Thank you for choosing Titan SFTP Enterprise Server - Cloud Edition from South River Technologies. This is the Pay-as-you-go version of our solution, meaning that it will run fully featured without the need to purchase a license from South River Technologies. Simply fire up your Titan Server VM, and run your business.
+Thank you for choosing Titan SFTP-HA Server from South River Technologies. This is the Pay-as-you-go version of our solution, meaning that it will run fully featured without the need to purchase a license from South River Technologies. Simply fire up your Titan Server VM, and run your business.
 
 ## What's on the VM?
 
-This Titan SFTP Server Virtual Machine (VM) contains a pre-built and pre-configured installation of the product. All bells and whistles are available for you to utilize and a sample server instance called Default Server has already been configured with FTP/S, SFTP and HTTP/S services enabled. There is also a test user for logging in to the system however the user account is disabled by default so you will need to edit the user and enable the account before you can login. NOTE: It is strongly recommended that you change the credentials of the test user immediately.
+This Titan SFTP Server-HA Virtual Machine (VM) contains a pre-built and pre-configured installation of the product. All bells and whistles are available for you to utilize and a sample server instance called Default Server has already been configured with FTP/S, SFTP and HTTP/S services enabled. There is also a test user for logging in to the system however the user account is disabled by default so you will need to edit the user and enable the account before you can login. NOTE: It is strongly recommended that you change the credentials of the test user immediately.
 
 ## Getting Started
 
-To launch the Titan SFTP Administrator click on the Titan SFTP Server desktop icon which will launch the browser and connect to the default localhost admin port of 31443. The first time you run the Administrator it will prompt you to create a new Administrator account to allow configuring the server.
+To launch the Titan SFTP-HA Administrator click on the Titan SFTP Server desktop icon which will launch the browser and connect to the default localhost admin port of 31443. The first time you run the Administrator it will prompt you to create a new Administrator account to allow configuring the server.
 
-## Features Titan SFTP Server
+## Features Titan SFTP Server-HA
 
 Some of the features of Titan which are available include:
 
+- `Clustering`- The Titan SFTP Server-HA (high availability) edition can be clustered with other nodes when using a common SQL Server Database instance.
 - `Implicit FTP/S`– Implicit FTP/S is running on port 990. Connect on port 990 with your FTP client in Implicit mode and the security is immediate.
 - `HTTP/S`– The secure WebUI is running on port 443 and is using a non-CA validated test certificate. While you will be able to connect on port 443, you will get warning about the invalid certificate. This it completely normal and will go away when you replace your test certificate with a valid certificate from a CA. To test, point your browser to https://localhost/ for the logon page
 - `SFTP`- currently running on port 2200 and includes all strong encryption cyphers and both password and public key authentication are enabled and supported. Putty's command line PSFTP.exe utility is included in the C:\Program Files\South River Technologies\srxserver\Utils folder and can be used for testing SFTP access. Connecting to the server can be accomplished from the command line using
