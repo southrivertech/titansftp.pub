@@ -1,4 +1,4 @@
-# <img src="https://srtcdnstorage.blob.core.windows.net/software/nextgen/titansftp/titansftp48.png" alt="Titan SFTP Server logo"> Titan SFTP Server - Enterprise Cloud Edition for Linux</img>
+# <img src="https://srtcdnstorage.blob.core.windows.net/software/nextgen/titansftp/titansftp48.png" alt="Titan SFTP Server logo"> Titan SFTP Server - Cloud Edition for Linux</img>
 
 Thank you for choosing Titan SFTP Server - Cloud Edition from South River Technologies. This is the Pay-as-you-go version of our solution.
 
