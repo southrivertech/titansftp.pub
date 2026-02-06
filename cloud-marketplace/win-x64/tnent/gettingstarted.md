@@ -34,7 +34,7 @@ Some optional advanced features of Titan SFTP require a seperate module license 
 5. High Availability & Scaling - Clustering, failover protection, load distribution, and enterprise-grade resilience for large-scale deployments.
 6. Neo AI Assitant - AI-powered operational insights, anomaly detection, predictive analytics, and intelligent configuration guidance.
 
-For more information on Titan Modules please visit: https://southrivertech.com/titan-add-on-modules/
+For more information on Titan Modules please visit: [https://southrivertech.com/titan-add-on-modules](https://southrivertech.com/titan-add-on-modules/)
 
 ## Configure Titan for External access
 
