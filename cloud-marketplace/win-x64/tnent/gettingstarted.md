@@ -1,6 +1,6 @@
 # <img src="https://srtcdnstorage.blob.core.windows.net/software/nextgen/titansftp/titansftp48.png" alt="Titan logo"> Titan SFTP Server - Enterprise Cloud Edition for Windows</img>
 
-Thank you for choosing Titan SFTP Server from South River Technologies. This is the Pay-as-you-go version of our solution, meaning that it will run fully featured without the need to purchase a license from South River Technologies. Simply fire up your Titan Server VM, and run your business.
+Thank you for choosing Titan SFTP Server from South River Technologies. This is the Pay-as-you-go version of our solution.
 
 ## What's on the VM?
 
