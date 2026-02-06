@@ -1,10 +1,10 @@
 # <img src="https://srtcdnstorage.blob.core.windows.net/software/nextgen/titansftp/titansftp48.png" alt="Titan SFTP Server logo"> Titan SFTP Server - Enterprise Cloud Edition for Linux</img>
 
-Thank you for choosing Titan SFTP Enterprise Server - Cloud Edition from South River Technologies. This is the Pay-as-you-go version of our solution, meaning that it will run fully featured without the need to purchase a license from South River Technologies. Simply fire up your Titan Server VM, and run your business.
+Thank you for choosing Titan SFTP Server - Cloud Edition from South River Technologies. This is the Pay-as-you-go version of our solution.
 
 ## What's on the VM?
 
-This Titan SFTP Server Virtual Machine (VM) contains a pre-built and pre-configured installation of the product. All bells and whistles are available for you to utilize and a sample server instance called Default Server has already been configured with FTP/S, SFTP and HTTP/S services enabled. There is also a test user for logging in to the system however the user account is disabled by default so you will need to edit the user and enable the account before you can login. NOTE: It is strongly recommended that you change the credentials of the test user immediately.
+This Titan SFTP Server Virtual Machine (VM) contains a pre-built and pre-configured installation of the product. A sample server instance called Default Server has already been configured with FTP/S, SFTP and HTTP/S services enabled. There is also a test user for logging in to the system however the user account is disabled by default so you will need to edit the user and enable the account before you can login. NOTE: It is strongly recommended that you change the credentials of the test user immediately.
 
 ## Usage Instructions / Getting Started
 
@@ -22,13 +22,26 @@ sudo /opt/southriver/srxserver/srxserver /LASINIT /username='<admin-username>' /
 Some of the features of Titan which are available include:
 
 - `Implicit FTP/S`– Implicit FTP/S is running on port 990. Connect on port 990 with your FTP client in Implicit mode and the security is immediate.
-- `HTTP/S`– The secure WebUI is running on port 443 and is using a non-CA validated test certificate. While you will be able to connect on port 443, you will get warning about the invalid certificate. This it completely normal and will go away when you replace your test certificate with a valid certificate from a CA. To test, point your browser to https://localhost/ for the logon page
+- `HTTP/S`– The optional secure WebUI is running on port 443 and is using a non-CA validated test certificate. While you will be able to connect on port 443, you will get warning about the invalid certificate. This it completely normal and will go away when you replace your test certificate with a valid certificate from a CA. To test, point your browser to https://localhost/ for the logon page
 - `SFTP`- currently running on port 2200 and includes all strong encryption cyphers and both password and public key authentication are enabled and supported. Putty's command line PSFTP.exe utility is included in the C:\Program Files\South River Technologies\srxserver\Utils folder and can be used for testing SFTP access. Connecting to the server can be accomplished from the command line using
 
   > psftp -P 2200 test@localhost -pw test
   >
 - `Public Host Key Authentication`- SSH's highly secure Public Key authentication has been enabled on this server. To use Public Host Key authentication, upload your SFTP client Public Key (.pub) file to the Titan Server and use the Host Key Management utility to Import the client Public Key into the Titan Server Admin console. Once the client's public key has been imported into the Admin console, simply locate the user's account information under the Users node and on their SFTP tab, assign the key to their account. If you have trouble with this feature, contact our help desk and we’ll be glad to help you get started
 - `Email Notifications`- Titan has a full Events Management system which can be leveraged to do many things, including send email notifications for alerts. To fully leverage the power of Email Notifications, please make sure to configure the settings for your specific email server under the Titan Admin console's Email tab.
+
+## Optional Feature Modules for Titan SFTP
+
+Some optional advanced features of Titan SFTP require a seperate module license available for purchase from South River Technologies
+
+1. Web UI & File Sharing - An end user web browser interface to access files, easy link sharing for internal and external partners, DropZone portals for secure file uploads from external partners
+2. Advanced Authentication (MFA) - Supported verification methods include email codes, SMS text codes, Microsoft Authenticator, and Google Authenticator.
+3. FIPS Compliance - FIPS 140-2 validated cryptographic controls enforced across all supported Titan products.
+4. Advanced Encryption (PGP) - Open PGP-compliant streaming PGP encryption and file-at-rest encryption, automated decryption, and comprehensive partner key management.
+5. High Availability & Scaling - Clustering, failover protection, load distribution, and enterprise-grade resilience for large-scale deployments.
+6. Neo AI Assitant - AI-powered operational insights, anomaly detection, predictive analytics, and intelligent configuration guidance.
+
+For more information on Titan Modules please visit: [https://southrivertech.com/titan-add-on-modules](https://southrivertech.com/titan-add-on-modules/)
 
 ## Configure Titan for External access
 
@@ -45,7 +58,7 @@ At this point, the general configurations are complete and the test user should 
 
 ## Notes
 
-- `HTTP/S and FTP/S Services` – The server has been tested against both the DigiCert.com and SslLabs.com TLS security vulnerability scanner and passed. This Windows Server image has been hardened with 3DES, SHA1, TLS 1.0 and other weak ciphers being disabled.
+- `HTTP/S and FTP/S Services` – The optional end user web UI server has been tested against both the DigiCert.com and SslLabs.com TLS security vulnerability scanner and passed. This Windows Server image has been hardened with 3DES, SHA1, TLS 1.0 and other weak ciphers being disabled.
 - `FTP/S Services` - The default security mode for the data connection is PROT P. This means that if your FTP/S client does not specify PROT P or PROT C before opening a data connection, PROT P is assumed and the server will expect the client to perform a secure handshake during the transfer
 - The test server has a test host key. Don't use these once you open up the server to public access as they are not meant for general use.
 - The Firewall has been pre-configured to allow inbound traffic on port 2200, 990, 443, and FTP Passive range 50000-50100. This will allow external programs the ability to connect to the Titan server's Default Server instance on port 2200 and via FTP and Web interface.
