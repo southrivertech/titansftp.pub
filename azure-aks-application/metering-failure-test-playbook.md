@@ -9,25 +9,25 @@ This playbook validates failure handling and recovery for Azure metering behavio
 ## 1) Simulate Corruption (20-hour scenario)
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File "C:\SRT\Work\2026\Aug\05-Aug\Azure Managed Plan\Test-Azure-Metering-Failure.ps1" -Mode Corrupt -Namespace titansftp-system -StatefulSetName titansftp -RestartStatefulSet
+powershell -ExecutionPolicy Bypass -File "..\Test-Azure-Metering-Failure.ps1" -Mode Corrupt -Namespace titansftp-system -StatefulSetName titansftp -RestartStatefulSet
 ```
 
 ## 2) Recover
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File "C:\SRT\Work\2026\Aug\05-Aug\Azure Managed Plan\Test-Azure-Metering-Failure.ps1" -Mode Recover -Namespace titansftp-system -StatefulSetName titansftp -RestartStatefulSet
+powershell -ExecutionPolicy Bypass -File "..\Test-Azure-Metering-Failure.ps1" -Mode Recover -Namespace titansftp-system -StatefulSetName titansftp -RestartStatefulSet
 ```
 
 ### Fast recovery tick (1 minute)
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File "C:\SRT\Work\2026\Aug\05-Aug\Azure Managed Plan\Test-Azure-Metering-Failure.ps1" -Mode Recover -Namespace titansftp-system -StatefulSetName titansftp -RestartStatefulSet -FastRecoveryTick
+powershell -ExecutionPolicy Bypass -File "..\Test-Azure-Metering-Failure.ps1" -Mode Recover -Namespace titansftp-system -StatefulSetName titansftp -RestartStatefulSet -FastRecoveryTick
 ```
 
 ## 3) Verify
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File "C:\SRT\Work\2026\Aug\04-Aug\Azure Managed Plan\Test-Azure-Metering-Failure.ps1" -Mode Verify
+powershell -ExecutionPolicy Bypass -File "..\Test-Azure-Metering-Failure.ps1" -Mode Verify
 ```
 
 ## Operational Verification
