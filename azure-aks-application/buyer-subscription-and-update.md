@@ -49,19 +49,19 @@ Supported operations:
 ### Scale only
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File "..\update-managed-app.ps1" -ResourceGroup "rohit_kapoor_rg" -NodeCount 3
+powershell -ExecutionPolicy Bypass -File "..\update-managed-app.ps1" -ResourceGroup "resource_group_name" -NodeCount 3
 ```
 
 ### Image only
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File "..\update-managed-app.ps1" -ResourceGroup "rohit_kapoor_rg" -ImageTag "1.0.16"
+powershell -ExecutionPolicy Bypass -File "..\update-managed-app.ps1" -ResourceGroup "resource_group_name" -ImageTag "1.0.16"
 ```
 
 ### Image + scale
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File "..\update-managed-app.ps1" -ResourceGroup "rohit_kapoor_rg" -ImageTag "1.0.16" -NodeCount 3
+powershell -ExecutionPolicy Bypass -File "..\update-managed-app.ps1" -ResourceGroup "resource_group_name" -ImageTag "1.0.16" -NodeCount 3
 ```
 
 ## Update Existing Subscription from Azure Portal

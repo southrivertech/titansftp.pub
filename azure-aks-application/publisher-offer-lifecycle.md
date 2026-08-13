@@ -40,7 +40,7 @@ powershell -ExecutionPolicy Bypass -File "..\Srt.NextGen\ServerCore\Source\Helm 
 ### Full flow (import image + build ZIP)
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File "..\Srt.NextGen\ServerCore\Source\Helm Charts\Container Offer\AzureManagedAPP\titansftp-managed-app\build-and-package.ps1" -Version "1.0.24" -DockerHubUser "rohitsrt" -DockerHubPassword "<DockerHubPassword>" -MeteringPlanId "payg-custom-metered"
+powershell -ExecutionPolicy Bypass -File "..\Srt.NextGen\ServerCore\Source\Helm Charts\Container Offer\AzureManagedAPP\titansftp-managed-app\build-and-package.ps1" -Version "1.0.24" -DockerHubUser "<DockerHubUserName>" -DockerHubPassword "<DockerHubPassword>" -MeteringPlanId "payg-custom-metered"
 ```
 
 ## 4) Upload to Partner Center
