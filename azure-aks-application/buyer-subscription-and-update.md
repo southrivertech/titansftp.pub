@@ -1,31 +1,67 @@
 # Buyer Subscription and Update Guide
 
-This guide explains deployment behavior, buyer update options, and safe update workflows.
+This guide explains how a buyer subscribes, deploys, and updates Titan SFTP from Azure Marketplace.
+
+## Buyer Marketplace Launch Link
+
+Use this buyer entry link:
+
+[Open Titan SFTP in Azure Marketplace](https://portal.azure.com/#view/Microsoft_Azure_Marketplace/GalleryItemDetailsBladeNopdl/id/southrivertech1586314123192.tn-sftp-ent-managed-app-cont-preview)
+
+After Azure sign-in, subscription and plan can be auto-selected based on account context.
 
 ## Managed Resource Group Model
 
-Marketplace managed applications deploy into two scopes:
-
-- Customer-chosen resource group (contains the managed application resource).
-- Azure-created managed resource group (contains AKS, storage, networking, and runtime infrastructure).
+Marketplace managed applications
 
 ```mermaid
 flowchart LR
-    A[Customer Subscription] --> B[Customer Resource Group]
-    B --> C[Managed Application Resource]
-    A --> D[Managed Resource Group]
-    D --> E[AKS]
-    D --> F[Storage Account + File Share]
-    D --> G[Networking + Public IP]
+    A[Customer Subscription] --> B[Managed Resource Group]
+    B --> E[AKS]
+    B --> F[Storage Account + File Share]
+    B --> G[Networking + Public IP]
 ```
 
-## Subscription as Buyer (High-Level)
+## Subscribe as Buyer (Portal UI Flow)
 
-1. Open the offer in Azure Marketplace.
-2. Choose plan and click **Create**.
-3. Provide required parameters in the UI.
-4. Validate and deploy.
-5. Monitor deployment in Azure Portal.
+1. Open the Azure Marketplace link above.
+2. Confirm the selected **Subscription** and **Plan**.
+3. Click **Create**.
+4. Fill in the deployment form on the **Basics** tab.
+5. Select **Review + create** and then **Create**.
+6. Monitor deployment status in Azure Portal notifications and deployment history.
+
+## Deployment Form Details (Buyer)
+
+### Project details
+
+- **Subscription**: choose the billing subscription.
+- **Resource group**: select existing or create a new one.
+
+### Instance details
+
+- **Location**
+- **AKS Cluster Name** (example: `titansftp-aks`)
+- **Node Count**
+- **Node VM Size**
+- **Kubernetes Version**
+- **Titan Admin Username**
+- **Titan Admin Password** and **Confirm Password**
+
+### Other details Including SQL and file share options
+
+- **Create managed Azure SQL and configure Titan clustering** (checkbox)
+- **Azure SQL Server Name (optional)**
+- **Azure SQL Database Name**
+- **Azure SQL Admin Username / Password**
+- **Create managed Azure File Share and mount as Titan User Data Directory** (checkbox)
+- **Storage Account Name (optional)**
+- **File Share Name**
+
+### Managed application details
+
+- **Application Name**
+- **Managed Resource Group**
 
 ## Key Deployment Inputs
 
@@ -35,34 +71,6 @@ flowchart LR
 - **File Share Name**:
   - Azure File Share name created in the selected storage account.
   - Default can be `titansftp`.
-
-## Update Existing Subscription with Script
-
-Script: `update-managed-app.ps1`
-
-Supported operations:
-
-- Image update via `-ImageTag`
-- Scale update via `-NodeCount`
-- Combined image + scale update
-
-### Scale only
-
-```powershell
-powershell -ExecutionPolicy Bypass -File "..\update-managed-app.ps1" -ResourceGroup "resource_group_name" -NodeCount 3
-```
-
-### Image only
-
-```powershell
-powershell -ExecutionPolicy Bypass -File "..\update-managed-app.ps1" -ResourceGroup "resource_group_name" -ImageTag "1.0.16"
-```
-
-### Image + scale
-
-```powershell
-powershell -ExecutionPolicy Bypass -File "..\update-managed-app.ps1" -ResourceGroup "resource_group_name" -ImageTag "1.0.16" -NodeCount 3
-```
 
 ## Update Existing Subscription from Azure Portal
 
@@ -79,11 +87,9 @@ Deployment mode is incremental:
 - Existing resources stay intact.
 - Only changed parameter-dependent resources update.
 
-## Seller and Buyer Validation Checklist
+## Buyer Validation Checklist
 
-- Offer version published in Partner Center.
 - Buyer can subscribe successfully.
 - AKS comes up healthy.
 - Storage and file share mount is validated.
-- Image update path tested.
-- Scale path tested.
+- Update path through portal custom deployment is tested.

@@ -1,47 +1,37 @@
 # Metering Failure Test Playbook
 
-This playbook validates failure handling and recovery for Azure metering behavior in Titan SFTP.
+This buyer-facing playbook provides non-invasive checks for metering-related runtime settings.
 
-## Test Script
+## Scope
 
-`Test-Azure-Metering-Failure.ps1`
+This public documentation does not include internal publisher test scripts.
 
-## 1) Simulate Corruption (20-hour scenario)
-
-```powershell
-powershell -ExecutionPolicy Bypass -File "..\Test-Azure-Metering-Failure.ps1" -Mode Corrupt -Namespace titansftp-system -StatefulSetName titansftp -RestartStatefulSet
-```
-
-## 2) Recover
+## 1) Verify Metering Environment Variables
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File "..\Test-Azure-Metering-Failure.ps1" -Mode Recover -Namespace titansftp-system -StatefulSetName titansftp -RestartStatefulSet
+kubectl exec -n titansftp-system <PodName> -- printenv | Select-String "CloudSettings__Metering"
 ```
 
-### Fast recovery tick (1 minute)
+Check that expected values are present and valid for the running environment.
+
+## 2) Verify Rollout Health
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File "..\Test-Azure-Metering-Failure.ps1" -Mode Recover -Namespace titansftp-system -StatefulSetName titansftp -RestartStatefulSet -FastRecoveryTick
+kubectl rollout status statefulset/titansftp -n titansftp-system
+kubectl get pods -n titansftp-system -w
 ```
 
-## 3) Verify
+## 3) Optional Metering Interval Update (Validation Scenario)
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File "..\Test-Azure-Metering-Failure.ps1" -Mode Verify
+kubectl set env statefulset/titansftp -n titansftp-system CloudSettings__Metering__IntervalMinutes=60
 ```
 
-## Operational Verification
-
-After each mode run:
-
-- Check pod restarts and health.
-- Check rollout completion.
-- Verify metering env values in the running pod.
-- Capture logs and timestamps for incident correlation.
+After update, re-run rollout and environment checks.
 
 ## Recommended Evidence Collection
 
-- Command transcripts.
-- StatefulSet rollout output.
-- Pod event summaries.
-- Metering-specific environment variables before and after recovery.
+- Output from environment variable checks.
+- StatefulSet rollout status output.
+- Pod readiness and restart counts.
+- Timestamped notes for any observed transient errors.

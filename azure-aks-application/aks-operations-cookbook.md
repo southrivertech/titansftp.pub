@@ -1,6 +1,6 @@
 # AKS Operations Cookbook
 
-Use this command reference for live operations and support scenarios.
+Use this buyer-facing command reference for live AKS operations and support checks.
 
 ## Connect to AKS
 
@@ -98,7 +98,7 @@ For pod-specific commands, replace pod name with `<PodName>`.
 
 ## Safe Runtime Operations
 
-- Prefer declarative updates through approved scripts.
+- Prefer small, validated changes and confirm rollout after each change.
 - Capture current values before changes.
 - Validate rollout status after every config or image change.
 - Keep a rollback image tag ready before production updates.

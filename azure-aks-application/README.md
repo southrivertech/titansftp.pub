@@ -1,37 +1,23 @@
-# Titan SFTP Azure Managed Application Guide
+# Titan SFTP Azure AKS Buyer Guide
 
-This folder documents the full lifecycle for the Titan SFTP Azure Marketplace managed application offer:
+This folder contains buyer-facing documentation for subscribing to and operating the Titan SFTP Azure managed application.
 
-- Publish a new offer or update an existing one.
-- Build and upload the deployment package.
-- Subscribe and operate as a buyer.
-- Run AKS and metering troubleshooting commands.
+## Scope of This Public Repo
 
-## What Is Included
+- Buyer onboarding and deployment steps in Azure Portal.
+- Buyer operational checks for AKS workloads.
+- Buyer troubleshooting basics.
 
-- `How to Create Azure Managed Plan Container Offer in Azure Market Place.docx` - original source document.
-- `publisher-offer-lifecycle.md` - publisher flow from packaging to publish/update.
-- `buyer-subscription-and-update.md` - buyer subscription, update, and access model.
-- `aks-operations-cookbook.md` - day-2 AKS and pod operations commands.
-- `metering-failure-test-playbook.md` - metering failure simulation and recovery steps.
+Seller/publisher implementation and release scripts are intentionally excluded from this public buyer guide.
 
-## End-to-End Flow
+## Documents Included
 
-```mermaid
-flowchart TD
-    A[Prepare image + templates] --> B[Build package zip]
-    B --> C[Upload package in Partner Center]
-    C --> D[Publish or update plan]
-    D --> E[Buyer subscribes from Azure Marketplace]
-    E --> F[Deployment to customer RG + managed RG]
-    F --> G[Operate and update: image and scale]
-    G --> H[Test metering and verify recovery]
-```
+- [Buyer subscription and update guide](https://github.com/southrivertech/titansftp.pub/blob/main/azure-aks-application/buyer-subscription-and-update.md) - buyer subscription flow and update path from Azure Portal.
+- [AKS operations cookbook](https://github.com/southrivertech/titansftp.pub/blob/main/azure-aks-application/aks-operations-cookbook.md) - AKS and runtime command reference for buyers.
+- [Metering failure test playbook](https://github.com/southrivertech/titansftp.pub/blob/main/azure-aks-application/metering-failure-test-playbook.md) - buyer-safe metering verification checks (no internal scripts).
 
-## Quick Start
+## Buyer Quick Start
 
-1. Read `publisher-offer-lifecycle.md` and run the packaging command.
-2. Upload the generated ZIP in Partner Center Technical Configuration.
-3. Publish the update.
-4. Validate using steps in `buyer-subscription-and-update.md`.
-5. Use `aks-operations-cookbook.md` for runtime checks and support operations.
+1. Open `buyer-subscription-and-update.md` and start from the Azure Marketplace link.
+2. Complete the portal form and deploy the managed application.
+3. Use `aks-operations-cookbook.md` after deployment for operational checks.
