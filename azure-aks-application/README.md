@@ -14,7 +14,6 @@ Seller/publisher implementation and release scripts are intentionally excluded f
 
 - [Buyer subscription and update guide](https://github.com/southrivertech/titansftp.pub/blob/main/azure-aks-application/buyer-subscription-and-update.md) - buyer subscription flow and update path from Azure Portal.
 - [AKS operations cookbook](https://github.com/southrivertech/titansftp.pub/blob/main/azure-aks-application/aks-operations-cookbook.md) - AKS and runtime command reference for buyers.
-- [Metering failure test playbook](https://github.com/southrivertech/titansftp.pub/blob/main/azure-aks-application/metering-failure-test-playbook.md) - buyer-safe metering verification checks (no internal scripts).
 
 ## Buyer Quick Start
 
