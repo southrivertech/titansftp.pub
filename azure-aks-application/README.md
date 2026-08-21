@@ -1,22 +1,7 @@
-# Titan SFTP Azure AKS Buyer Guide
+# Titan SFTP Azure Kubernetes Getting Started Guide
 
-This folder contains buyer-facing documentation for subscribing to and operating the Titan SFTP Azure managed application.
+The Titan SFTP Azure AKS Marketplace offer allows you to quickly launch an AKS cluster with Titan SFTP installed and confiugred with a SQL Server database and azure shared file storage and a load balancer. Chose the number of nodes for your cluster when launching the offer. You can always scale up by adding nodes or removing them or selecting auto scale.
 
-## Scope of This Public Repo
+For detailed steps on how to launch and configure the offer please read the [Buyer subscription and update guide](https://github.com/southrivertech/titansftp.pub/blob/main/azure-aks-application/buyer-subscription-and-update.md)
 
-- Buyer onboarding and deployment steps in Azure Portal.
-- Buyer operational checks for AKS workloads.
-- Buyer troubleshooting basics.
-
-Seller/publisher implementation and release scripts are intentionally excluded from this public buyer guide.
-
-## Documents Included
-
-- [Buyer subscription and update guide](https://github.com/southrivertech/titansftp.pub/blob/main/azure-aks-application/buyer-subscription-and-update.md) - buyer subscription flow and update path from Azure Portal.
-- [AKS operations cookbook](https://github.com/southrivertech/titansftp.pub/blob/main/azure-aks-application/aks-operations-cookbook.md) - AKS and runtime command reference for buyers.
-
-## Buyer Quick Start
-
-1. Open `buyer-subscription-and-update.md` and start from the Azure Marketplace link.
-2. Complete the portal form and deploy the managed application.
-3. Use `aks-operations-cookbook.md` after deployment for operational checks.
+After launching your AKS cluster you can consult the [AKS operations cookbook](https://github.com/southrivertech/titansftp.pub/blob/main/azure-aks-application/aks-operations-cookbook.md) for a handy guide of commands that may be useful.

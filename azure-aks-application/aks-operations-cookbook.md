@@ -1,6 +1,6 @@
-# AKS Operations Cookbook
+# Titan AKS Operations Cookbook
 
-Use this buyer-facing command reference for live AKS operations and support checks.
+A collection of sample commands that can be used to monitor and configure your AKS cluster. Please replace 'managed-resource-group' with your AKS resource group, not the parent azure resouce group. Also use the proper aks-cluster-name that was used when you created the Titan AKS Cluster from the Marketplace. One of the most useful commands will be to discover the external IP address of your nodes. 
 
 ## Connect to AKS
 
@@ -14,7 +14,7 @@ Example:
 az aks get-credentials --resource-group mrg-tn-sftp-ent-managed-a-20260813115444 --name titansftp-aks --overwrite-existing
 ```
 
-## Service and IP Discovery
+## Service and External IP Discovery
 
 ```powershell
 kubectl get svc -A
@@ -22,14 +22,6 @@ kubectl get svc -A
 
 Use this to identify externally exposed services and public endpoints.
 
-## Find External IP Address of Container Pods
-
-Run these commands in sequence:
-
-```powershell
-az aks get-credentials --resource-group mrg-tn-sftp-ent-managed-a-20260813115444 --name titansftp-aks --overwrite-existing
-kubectl get svc -A
-```
 
 ## Rollout and Pod Health
 
@@ -38,28 +30,6 @@ kubectl rollout status statefulset/titansftp -n titansftp-system
 kubectl get pods -n titansftp-system -w
 ```
 
-## Environment Variable Inspection and Update
-
-### Read metering env values from pod
-
-```powershell
-kubectl exec -n titansftp-system titansftp-0 -- printenv | Select-String "CloudSettings__Metering"
-```
-
-Replace `titansftp-0` with `<PodName>` where needed.
-
-## Set Env Variables for AKS
-
-```powershell
-kubectl set env statefulset/titansftp -n titansftp-system CloudSettings__Metering__Enabled=false
-```
-
-### Update metering env settings
-
-```powershell
-kubectl set env statefulset/titansftp -n titansftp-system CloudSettings__Metering__Enabled=false
-kubectl set env statefulset/titansftp -n titansftp-system CloudSettings__Metering__IntervalMinutes=60
-```
 
 ## Locate SQLite Databases in Pod
 

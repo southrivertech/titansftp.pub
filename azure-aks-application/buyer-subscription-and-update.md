@@ -86,10 +86,3 @@ Deployment mode is incremental:
 
 - Existing resources stay intact.
 - Only changed parameter-dependent resources update.
-
-## Buyer Validation Checklist
-
-- Buyer can subscribe successfully.
-- AKS comes up healthy.
-- Storage and file share mount is validated.
-- Update path through portal custom deployment is tested.
