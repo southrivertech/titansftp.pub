@@ -30,6 +30,8 @@ flowchart LR
 4. Fill in the deployment form on the **Basics** tab.
 5. Select **Review + create** and then **Create**.
 6. Monitor deployment status in Azure Portal notifications and deployment history.
+7. Once the offer has been deployed you need to determine the external IP address for each node. This can be done with the command 'kubectl get svc -A'  See the [AKS operations cookbook](https://github.com/southrivertech/titansftp.pub/blob/main/azure-aks-application/aks-operations-cookbook.md) for full details on getting the credentials setup and then getting IP information.
+8. Once you have the external IP address of a node open a browser to https://node-remote-ip-address:41443  This will display a certificate warning because the certificate is self signed, you can ignore this and continue. After accepting the EULA you can login to the Titan SFTP Administrator web UI with the credentials you specified when deploying the offer. Now you can confgure your SFTP server
 
 ## Deployment Form Details (Buyer)
 

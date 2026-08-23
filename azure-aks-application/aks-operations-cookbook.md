@@ -1,6 +1,6 @@
 # Titan AKS Operations Cookbook
 
-A collection of sample commands that can be used to monitor and configure your AKS cluster. Please replace 'managed-resource-group' with your AKS resource group, not the parent azure resouce group. Also use the proper aks-cluster-name that was used when you created the Titan AKS Cluster from the Marketplace. One of the most useful commands will be to discover the external IP address of your nodes. 
+A collection of sample commands that can be used to monitor and configure your AKS cluster. Please replace 'managed-resource-group' with your AKS resource group, not the parent azure resouce group. Also use the proper aks-cluster-name that was used when you created the Titan AKS Cluster from the Marketplace. One of the most useful commands will be to discover the external IP address of your nodes.
 
 ## Connect to AKS
 
@@ -22,14 +22,12 @@ kubectl get svc -A
 
 Use this to identify externally exposed services and public endpoints.
 
-
 ## Rollout and Pod Health
 
 ```powershell
 kubectl rollout status statefulset/titansftp -n titansftp-system
 kubectl get pods -n titansftp-system -w
 ```
-
 
 ## Locate SQLite Databases in Pod
 
